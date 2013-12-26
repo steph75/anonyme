@@ -118,7 +118,7 @@ a:hover .social-icon {
   z-index: 999;
 }
 #top-search input[type=text] {
-  background: #e7d544;
+  background: azure;
   outline: none;
   border: none;
   box-shadow: inset 0px -1px 1px #e2cd20;
@@ -127,20 +127,20 @@ a:hover .social-icon {
 }
 #top-search input[type=text]:hover,
 #top-search input[type=text]:focus {
-  background: #e2cd20;
+  background: #E4F2FD;
 }
 #top-search ::-webkit-input-placeholder {
-  color: #978e3f;
+  color: #9FD0D5;
 }
 #top-search :-moz-placeholder {
   /* Firefox 18- */
 
-  color: #978e3f;
+  color: #9FD0D5;
 }
 #top-search ::-moz-placeholder {
   /* Firefox 19+ */
 
-  color: #978e3f;
+  color: #9FD0D5;
 }
 #top-search :-ms-input-placeholder {
   color: red;
@@ -154,7 +154,7 @@ a:hover .social-icon {
   top: -2px;
   box-shadow: none;
   right: -30px;
-  color: #857d37;
+  color: #83b4d8;
 }
 /* 3. Header
 ------------------------------------------------------- */
@@ -286,7 +286,7 @@ a:active {
 }
 #site-navigation a {
   display: block;
-  color: #b7ac52;
+  color: #b8d3e2;
   text-decoration: none;
   font-weight: normal;
   padding: 0px 15px;
@@ -362,7 +362,7 @@ div.slide-description {
 /* 7. Content 
 ------------------------------------------------------- */
 #content {
-  background: white;
+  background: whitesmoke;
   border-top: solid 4px #b2b2b2;
   padding: none;
   margin-right: 0px;
