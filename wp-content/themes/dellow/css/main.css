@@ -62,7 +62,7 @@ code {
 /* 2. Top Bar
 ------------------------------------------------------- */
 #top-bar {
-  background: #e8d74d;
+  background: #b2b2b2;
   padding: 5px 0px;
   position: relative;
   z-index: 99999;
@@ -172,7 +172,7 @@ body {
   top: -10px;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0px #e8d74d;
+  text-shadow: 1px 1px 0px #b2b2b2;
 }
 .site-title a {
   color: black;
@@ -212,7 +212,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #e8d74d;
+  color: #b2b2b2;
 }
 /* 5. Navigation Menu 
 -------------------------------------------------------	*/
@@ -295,12 +295,12 @@ a:active {
   border-top: none;
   padding: 0px 15px;
   box-shadow: none;
-  background: #e8d74d;
+  background: #b2b2b2;
   color: black;
 }
 #site-navigation li:hover > a {
   color: #000;
-  background: #e8d74d;
+  background: #b2b2b2;
   box-shadow: none;
 }
 #site-navigation ul ul li:hover > a {
@@ -363,7 +363,7 @@ div.slide-description {
 ------------------------------------------------------- */
 #content {
   background: white;
-  border-top: solid 4px #e8d74d;
+  border-top: solid 4px #b2b2b2;
   padding: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -426,7 +426,7 @@ article.archive .article-rest {
   color: #736c30;
 }
 .featured-thumb .img-meta .meta-link:hover {
-  color: #e8d74d;
+  color: #b2b2b2;
   text-decoration: none;
 }
 .featured-thumb .img-meta .meta-link i {
@@ -462,7 +462,7 @@ article.archive .article-rest {
   color: #000000;
 }
 .archive .entry-title a:hover {
-  color: #e8d74d;
+  color: #b2b2b2;
 }
 .archive .entry-meta {
   font-size: small;
@@ -547,7 +547,7 @@ article.archive .article-rest {
 }
 #secondary .widget_calendar thead,
 #footer-sidebar .widget_calendar thead {
-  border-bottom: solid 1px #e8d74d;
+  border-bottom: solid 1px #b2b2b2;
 }
 #secondary .widget_calendar thead th,
 #footer-sidebar .widget_calendar thead th {
@@ -574,7 +574,7 @@ article.archive .article-rest {
 #footer-sidebar h1.widget-title {
   font-size: 20px;
   font-weight: normal;
-  border-bottom: solid 4px #e8d74d;
+  border-bottom: solid 4px #b2b2b2;
   background: #fafafa;
   padding: 5px;
   margin-top: 0px;
