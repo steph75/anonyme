@@ -76,13 +76,42 @@ add_action( 'widgets_init', 'anonyme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function anonyme_scripts() {
-	wp_enqueue_style( 'anonyme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'anonyme-fonts', 'http://fonts.googleapis.com/css?family=Exo+2:400,700,300' );
 
-	wp_enqueue_script( 'anonyme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+        
+        //wp_enqueue_style( 'anonyme-style', get_stylesheet_uri() );
+
+	wp_enqueue_style( 'anonyme-basic-style', get_stylesheet_uri() );
+	if ( (function_exists( 'of_get_option' )) && (of_get_option('sidebar-layout', true) != 1) ) {
+		if (of_get_option('sidebar-layout', true) ==  'right') {
+			wp_enqueue_style( 'anonyme-layout', get_template_directory_uri()."/css/layouts/content-sidebar.css" );
+		}
+		elseif (of_get_option('sidebar-layout', true) ==  'left') {
+			wp_enqueue_style( 'anonyme-layout', get_template_directory_uri()."/css/layouts/sidebar-content.css" );
+		}
+		else {
+			wp_enqueue_style( 'anonyme-layout', get_template_directory_uri()."/css/layouts/content.css" );
+		}	
+	}
+	else {
+		wp_enqueue_style( 'anonyme-layout', get_template_directory_uri()."/css/layouts/content-sidebar.css" );
+	}
+	
+	wp_enqueue_style( 'anonyme-sidr-style', get_template_directory_uri()."/css/sidr.css" );
+        
+	wp_enqueue_style( 'anonyme-bootstrap-style', get_template_directory_uri()."/css/bootstrap.min.css", array('anonyme-layout') );
+
+        wp_enqueue_style( 'anonyme-main-style', get_template_directory_uri()."/css/main.css", array('anonyme-layout','anonyme-sidr-style') );
+
+        wp_enqueue_script( 'anonyme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'anonyme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'anonyme-sidr', get_template_directory_uri() . '/js/sidr/jquery.sidr.min.js', array('jquery') );
+
+	wp_enqueue_script( 'anonyme-custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery') );
+
+        if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
